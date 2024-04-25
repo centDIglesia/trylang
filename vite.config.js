@@ -1,8 +1,9 @@
-// vite.config.js
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
+
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
+  base: '/trylang/', 
   build: {
     rollupOptions: {
       input: {
@@ -11,4 +12,4 @@ export default defineConfig({
       },
     },
   },
-})
+});
